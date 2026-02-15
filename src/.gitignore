@@ -1,0 +1,15 @@
+# Virtual Environments
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Data and Models (GitHub blocks large files)
+data/*.csv
+models/*.h5
+models/*.pkl
+
+# OS Files
+.DS_Store
