@@ -68,7 +68,7 @@ streamlit run dashboard/app.py
 ```
 The dashboard will automatically open in your web browser at `http://localhost:8501`.
 
-## How the AI Works (Behind the Scenes)
+## How the AI Works 
 1. **Feature Engineering:** The system looks at "Lags" (how many people came yesterday, or exactly one week ago) and "Rolling Means" (the 7-day average) to understand momentum.
 2. **LSTM Model:** A Long Short-Term Memory neural network evaluates these features alongside holiday indicators to predict foot traffic.
 3. **FAISS Retrieval:** The exact same features are fed into a vector database using Inner Product / L2 Normalization (Cosine Similarity). It finds the closest matching historical days to justify the LSTM's prediction, providing a "sanity check" for the user.
